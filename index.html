@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Network</title>
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <!-- STYLESHEET -->
+    <!-- <link rel="stylesheet" href="noramlize.css" />
+     <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- <nav class="nav">
+      <div class="nav-center">
+        <h2 class="logo">COMFY</h2>
+        <div class="search-bar">
+          <i class="uil uil-search search-icon"></i>
+          <input
+            type="search"
+            placeholder="Search for creators,inspirations.projects"
+            class="search-input"
+          />
+        </div>
+        <div class="create">
+          <label for="create" class="btn create-btn">create</label>
+          <div class="profile-pic">
+            <img src="./images/profile-1.jpg" alt="profile pic" class="img" />
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <!-- end of navbar -->
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="container">
+        <h2 class="logo">COMFY</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="search"
+            placeholder="Search for creators,inspirations.projects"
+          />
+        </div>
+        <div class="create">
+          <label for="create-post" class="btn btn-primary">create</label>
+          <div class="profile-photo">
+            <img src="./images/profile-1.jpg" alt="profile pic" class="img" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- main -->
+    <main class="main">
+      <div class="container">
+        <div class="left">
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="/images/profile-3.jpg" alt="this is my image" />
+            </div>
+            <div class="handle">
+              <h4>COMFY</h4>
+              <p class="text-muted">@comfy</p>
+            </div>
+          </a>
+          <!------------- ------------SIDEBAR----------------------- -->
+          <!-- emmet:.sidebar>a.list-item>ul>li*5 -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i> </span>
+              <h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span>
+                <i class="uil uil-bell"
+                  ><small class="notification-count">7+</small></i
+                ></span
+              >
+              <h3>Notifications</h3>
+              <!-- -----------------------------NOTIFICATION POPUP----- -->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-photo">
+                    <img src="/images/profile-10.jpg " />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>sajad saeedi</b> accepted your friend request</p>
+                    <small class="text-muted">1 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-1.jpg " />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>chen wong</b> commented on your post</p>
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-3.jpg " />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>carol miraje</b> and 220 others liked your post</p>
+                    <small class="text-muted">4 MINUTES AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-4.jpg " />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>alisa ruby</b> commented on your post</p>
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-11.jpg " />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>alex suarez</b> commented on your post</p>
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+                <!-- ---------------------END OF NOTIFICATION POPUP ---------------------------->
+              </div>
+            </a>
+
+            <a class="menu-item" id="messages-notification">
+              <span>
+                <i class="uil uil-envelope-alt"
+                  ><small class="notification-count">4</small></i
+                >
+              </span>
+              <h3>messages</h3>
+            </a>
+            <a class="menu-item">
+              <span>
+                <i class="uil uil-bookmark"></i>
+              </span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span>
+                <i class="uil uil-chart-line"></i>
+              </span>
+              <h3>Analytics</h3>
+            </a>
+            <a class="menu-item" id="theme">
+              <span>
+                <i class="uil uil-palette"></i>
+              </span>
+              <h3>Theme</h3>
+            </a>
+            <a class="menu-item">
+              <span>
+                <i class="uil uil-setting"></i>
+              </span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <!-- --------------------------END OF SIDEBAR-------------------- -->
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+
+        <!-- middle -->
+        <div class="middle">
+          <section class="stories">
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-2.jpg" alt="" />
+              </div>
+              <p class="name">ECarry</p>
+            </article>
+
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-3.jpg" alt="" />
+              </div>
+              <p class="name">Your Story</p>
+            </article>
+
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <p class="name">Your Story</p>
+            </article>
+
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-5.jpg" alt="" />
+              </div>
+              <p class="name">Your Story</p>
+            </article>
+
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-6.jpg" alt="" />
+              </div>
+              <p class="name">Your Story</p>
+            </article>
+
+            <article class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-7.jpg" alt="" />
+              </div>
+              <p class="name">Your Story</p>
+            </article>
+          </section>
+          <!------------ END STORIES ------------->
+
+          <form class="create-post">
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="What's on your mind?"
+              id="create-post"
+            />
+            <input type="submit" value="post" class="btn btn-primary" />
+          </form>
+          <section class="feeds">
+            <article class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Deemo</h4>
+                    <small>15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uli uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-1.jpg" alt="" class="img" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span><i class="uli uil-heart"></i></span>
+                  <span><i class="uli uil-comment-dots"></i></span>
+                  <span><i class="uli uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uli uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/profile-2.jpg" alt="" /></span>
+                <span><img src="./images/profile-3.jpg" alt="" /></span>
+                <span><img src="./images/profile-4.jpg" alt="" /> </span>
+                <p>liked by <b>Arcsag Bhdff</b> and <b>2398 others</b></p>
+              </div>
+              <div class="caption">
+                <b>lana rose</b> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolore amet esse eligendi, libero qui, ratione
+                perspiciatis eius temporibus.
+                <span class="hashtag">#lifestyle</span>
+              </div>
+              <div class="comment">
+                <p class="text-muted">View all 277 comments</p>
+              </div>
+            </article>
+            <article class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Deemo</h4>
+                    <small>15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uli uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-2.jpg" alt="" class="img" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span><i class="uli uil-heart"></i></span>
+                  <span><i class="uli uil-comment-dots"></i></span>
+                  <span><i class="uli uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uli uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/profile-2.jpg" alt="" /></span>
+                <span><img src="./images/profile-3.jpg" alt="" /></span>
+                <span><img src="./images/profile-4.jpg" alt="" /> </span>
+                <p>liked by <b>Arcsag Bhdff</b> and <b>2398 others</b></p>
+              </div>
+              <div class="caption">
+                <b>lana rose</b> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolore amet esse eligendi, libero qui, ratione
+                perspiciatis eius temporibus.
+                <span class="hashtag">#lifestyle</span>
+              </div>
+              <div class="comment">
+                <p class="text-muted">View all 277 comments</p>
+              </div>
+            </article>
+            <article class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Deemo</h4>
+                    <small>15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uli uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-3.jpg" alt="" class="img" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span><i class="uli uil-heart"></i></span>
+                  <span><i class="uli uil-comment-dots"></i></span>
+                  <span><i class="uli uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uli uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/profile-2.jpg" alt="" /></span>
+                <span><img src="./images/profile-3.jpg" alt="" /></span>
+                <span><img src="./images/profile-4.jpg" alt="" /> </span>
+                <p>liked by <b>Arcsag Bhdff</b> and <b>2398 others</b></p>
+              </div>
+              <div class="caption">
+                <b>lana rose</b> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolore amet esse eligendi, libero qui, ratione
+                perspiciatis eius temporibus.
+                <span class="hashtag">#lifestyle</span>
+              </div>
+              <div class="comment">
+                <p class="text-muted">View all 277 comments</p>
+              </div>
+            </article>
+            <article class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Deemo</h4>
+                    <small>15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uli uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-4.jpg" alt="" class="img" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span><i class="uli uil-heart"></i></span>
+                  <span><i class="uli uil-comment-dots"></i></span>
+                  <span><i class="uli uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uli uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/profile-2.jpg" alt="" /></span>
+                <span><img src="./images/profile-3.jpg" alt="" /></span>
+                <span><img src="./images/profile-4.jpg" alt="" /> </span>
+                <p>liked by <b>Arcsag Bhdff</b> and <b>2398 others</b></p>
+              </div>
+              <div class="caption">
+                <b>lana rose</b> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolore amet esse eligendi, libero qui, ratione
+                perspiciatis eius temporibus.
+                <span class="hashtag">#lifestyle</span>
+              </div>
+              <div class="comment">
+                <p class="text-muted">View all 277 comments</p>
+              </div>
+            </article>
+          </section>
+        </div>
+        <!-- right -->
+        <div class="right">
+          <section class="messages">
+            <div class="heading">
+              <h4>messages</h4>
+              <span><i class="uli uil-edit"></i></span>
+            </div>
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input
+                type="search"
+                placeholder="search message"
+                id="message-search"
+              />
+            </div>
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-request">Request(7)</h6>
+            </div>
+            <div class="message-container">
+              <article class="message">
+                <div class="profile-photo">
+                  <img src="./images/profile-10.jpg" alt="" />
+                  <div class="active"></div>
+                </div>
+                <div class="message-body">
+                  <h5>Edern Quist</h5>
+                  <p class="text-muted">Just do it bruh</p>
+                </div>
+              </article>
+              <article class="message">
+                <div class="profile-photo">
+                  <img src="./images/profile-6.jpg" alt="" />
+                </div>
+                <div class="message-body">
+                  <h5>Edern Quist</h5>
+                  <p class="text-bold">Bruh</p>
+                </div>
+              </article>
+              <article class="message">
+                <div class="profile-photo">
+                  <img src="./images/profile-12.jpg" alt="" />
+                </div>
+                <div class="message-body">
+                  <h5>Edern Quist</h5>
+                  <p class="text-muted">Just do it</p>
+                </div>
+              </article>
+              <article class="message">
+                <div class="profile-photo">
+                  <img src="./images/profile-12.jpg" alt="" />
+                </div>
+                <div class="message-body">
+                  <h5>Edern Quist</h5>
+                  <p class="text-bold">2 new messages</p>
+                </div>
+              </article>
+              <article class="message">
+                <div class="profile-photo">
+                  <img src="./images/profile-12.jpg" alt="" />
+                </div>
+                <div class="message-body">
+                  <h5>Edern Quist</h5>
+                  <p class="text-muted">Just do it</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="friend-requests">
+            <h4>Request</h4>
+
+            <article class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-11.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>ffHsss Bantssia</h5>
+                  <p class="text-muted">21 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </article>
+            <article class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-13.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>uajiau tia</h5>
+                  <p class="text-muted">2 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </article>
+            <article class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-12.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Hajia Bantia</h5>
+                  <p class="text-muted">4 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- end of main -->
+    <div class="customize-theme">
+      <div class="card">
+        <div class="card-head">
+          <h2>Customize your view</h2>
+          <p class="muted-text">change your color,background and font-size</p>
+        </div>
+        <div class="font-size">
+          <h4>font size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2 active"></span>
+              <span class="font-size-3 "></span>
+              <span class="font-size-4"></span>
+              
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+        <div class="colors">
+          <h4>color</h4>
+
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3 "></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+        <div class="background">
+          <h4>background</h4>
+
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5>light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5>dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5>dark</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
